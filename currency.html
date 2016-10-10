@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>HTML and Javascript</title>
+    <!-- Inline Stylesheet -->
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            font-family:verdana;
+            color:#002e52;
+            font-size:14pt;
+            font-weight:bold;
+            background-color:#5bc0de;
+        }
+
+        th, td {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body><h4>Currency XML</h4>
+    <!-- Area to display the table
+         and a button to run our code-->
+    <table id="display_area"></table>
+  
+    <h4>Via HTML and CSS</h4>
+    <script>
+        loadXMLDoc();
+        // This function should open the XML file, then call the code that
+            // will be responsible for displaying the contents
+            function loadXMLDoc() {
+                var xml_source_file = new XMLHttpRequest();
+                xml_source_file.open("GET", "currency.xml", false);
+                xml_source_file.setRequestHeader("Content-Type", "text/xml");
+                xml_source_file.send(null);
+                // store result in xmlDoc
+                // pass xmlDoc to the display code
+                var xmlDoc = xml_source_file.responseXML;
+                xmlDocToTable(xmlDoc);
+            }
+            function xmlDocToTable(xmlDoc) {
+                // iterator
+                // table string (declare header row here and add rest in loop)
+                // tag we are inspecting
+                var i;
+                var table = "<tr><th>NAME</th><th>UNIT</th><th>CURRENCYCODE</th><th>COUNTRY</th><th>RATE</th><th>CHANGE</th></tr>";
+                var x = xmlDoc.getElementsByTagName("CURRENCY");
+
+                // Loop through, XML nodes and add tags for displaying in table
+                for (i = 0; i < x.length; i++) {
+                    table += "<tr><td>" +
+                    x[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue +
+                    "</td><td>" +
+                    x[i].getElementsByTagName("UNIT")[0].childNodes[0].nodeValue +
+                    "</td><td>" +
+                    x[i].getElementsByTagName("CURRENCYCODE")[0].childNodes[0].nodeValue +
+                    "</td><td>" +
+                    x[i].getElementsByTagName("COUNTRY")[0].childNodes[0].nodeValue +
+                    "</td><td>" +
+                    x[i].getElementsByTagName("RATE")[0].childNodes[0].nodeValue +
+                    "</td><td>" +
+                    x[i].getElementsByTagName("CHANGE")[0].childNodes[0].nodeValue +
+                    "</td></tr>";
+                }
+                // Display result in the allocated area
+                document.getElementById("display_area").innerHTML = table;
+            }
+    </script>
+</body>
+</html>
+
+
+
+
+

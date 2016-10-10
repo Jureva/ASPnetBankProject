@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="customers.xsd" generated="2016-08-05T11:52:02">
+<customers>
+<customerid>456</customerid>
+<fname>Jack</fname>
+<sname>Jones</sname>
+<address1>11 Grafton Street</address1>
+<address2>Dublin 2</address2>
+<city>Dublin</city>
+<mobile>0896388527</mobile>
+</customers>
+<customers>
+<customerid>999</customerid>
+<fname>Paul</fname>
+<sname>Ramzy</sname>
+<address1>Tullip Street</address1>
+<address2>Bray</address2>
+<city>Bray</city>
+<mobile>0877744229</mobile>
+</customers>
+<customers>
+<customerid>123</customerid>
+<fname>Piano</fname>
+<sname>Piaggero</sname>
+<address1>56 Dawson Street</address1>
+<address2>Dublin 2</address2>
+<city>Dublin</city>
+<mobile>089765432</mobile>
+</customers>
+<customers>
+<customerid>101</customerid>
+<fname>Joe</fname>
+<sname>Bloggs</sname>
+<address1>1 Harcourt Street</address1>
+<address2>Dublin</address2>
+<city>Dublin</city>
+<mobile>08111222</mobile>
+</customers>
+<customers>
+<customerid>102</customerid>
+<fname>Karl</fname>
+<sname>Marks</sname>
+<address1>11 Dame Street</address1>
+<address2>Dublin</address2>
+<city>Dublin</city>
+<mobile>08512345</mobile>
+</customers>
+<customers>
+<customerid>103</customerid>
+<fname>Eva</fname>
+<sname>Mendes</sname>
+<address1>2 Mill Road</address1>
+<address2>Citywest</address2>
+<city>Dublin</city>
+<mobile>08974561</mobile>
+</customers>
+<customers>
+<customerid>104</customerid>
+<fname>Cloe</fname>
+<sname>Abraham</sname>
+<address1>47 Henry Street</address1>
+<address2>Dublin</address2>
+<city>Dublin</city>
+<mobile>08321654</mobile>
+</customers>
+</dataroot>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<loans>
+  <loan>
+    <customerid>102</customerid>
+    <loanid>l17</loanid>
+    <amount>900</amount>
+    <type>personal</type>
+  </loan>
+  <loan>
+    <customerid>106</customerid>
+    <loanid>l13</loanid>
+    <amount>20000</amount>
+    <type>car</type>
+  </loan>
+  <loan>
+    <customerid>109</customerid>
+    <loanid>l10</loanid>
+    <amount>1100</amount>
+    <type>student</type>
+  </loan>
+</loans>
